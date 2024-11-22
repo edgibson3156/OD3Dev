@@ -1,0 +1,922 @@
+//Microsoft Developer Studio generated resource script.
+//
+//#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "gridres.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GW_DBEXCEPTION DIALOG DISCARDABLE  0, 0, 221, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "DB Exception"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,99,50,14
+    PUSHBUTTON      "Print",IDC_GW_PRINT_ERROR,125,99,50,14
+    EDITTEXT        IDC_GW_RETURN_CODE,36,8,177,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "RetCode:",IDC_STATIC,4,10,31,7
+    EDITTEXT        IDC_GW_ERROR,7,24,206,32,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_GW_NATIVE_ORIGIN,7,62,206,32,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_GW_RENAME_TAB DIALOG DISCARDABLE  0, 0, 187, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Tab"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,23,50,14
+    EDITTEXT        IDC_GW_TAB_NAME,6,7,115,12,ES_AUTOHSCROLL
+END
+
+IDD_GW_INSERT_TAB DIALOG DISCARDABLE  0, 0, 187, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert Tab"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,23,50,14
+    EDITTEXT        IDC_GW_TAB_NAME,6,7,115,12,ES_AUTOHSCROLL
+END
+
+IDD_GW_ARRANGE_TAB DIALOG DISCARDABLE  0, 0, 187, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Arrange Tabs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,22,50,14
+    LISTBOX         IDC_GW_TAB_LIST,5,6,117,58,WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Move Up",IDC_GW_MOVEUP,5,67,50,14
+    DEFPUSHBUTTON   "Move Down",IDC_GW_MOVEDOWN,72,67,50,14
+END
+
+IDD_GW_FILL_PATTERN DIALOG DISCARDABLE  0, 0, 219, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Fill Pattern"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,164,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,23,50,14
+    CONTROL         "",IDC_GW_FORECOLOR,"Static",SS_BLACKFRAME,69,82,37,11
+    PUSHBUTTON      "...",IDC_GW_COLOR_DLG,109,80,15,14
+    LTEXT           "Forecolor",-1,36,84,32,8
+    LISTBOX         IDC_GW_PATTERN_ID,19,11,127,61,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GW_TEXT_FORMAT DIALOG DISCARDABLE  0, 0, 219, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Number Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,164,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,23,50,14
+    COMBOBOX        IDC_GW_FORMAT_STRINGS,15,38,124,59,CBS_SIMPLE | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Format String",IDC_STATIC,15,28,50,8
+    COMBOBOX        IDC_GW_CATEGORY,15,12,124,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Category",IDC_STATIC,16,2,59,9
+END
+
+IDD_GW_TEXT_ALIGNMENT DIALOG DISCARDABLE  0, 0, 219, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Text Alignment"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,164,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,23,50,14
+    CONTROL         "Word Wrap",IDC_GW_WORD_WRAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,76,62,10
+    LTEXT           "Horizontal",IDC_STATIC,21,15,36,7
+    LTEXT           "Vertical",IDC_STATIC,94,15,36,7
+    LISTBOX         IDC_GW_HORIZONTAL,21,25,48,39,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_GW_VERTICAL,91,25,48,39,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GW_VALID_STRINGS_DLG DIALOG DISCARDABLE  0, 0, 213, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Valid Strings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GW_VALID_STRING_OBJECT_NAME,7,16,53,12,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "String Source",IDC_STATIC,72,7,74,38
+    CONTROL         "Text Strings",IDC_GW_TEXT_STRINGS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,80,18,53,10
+    CONTROL         "External Data",IDC_GW_EXTERNAL_DATA,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,80,30,59,10
+    PUSHBUTTON      "Remove",IDC_GW_REMOVE,156,35,50,14
+    CONTROL         "",IDC_GW_VALID_STRING_GRID,"Static",SS_BLACKFRAME | 
+                    WS_GROUP | WS_TABSTOP,7,56,199,71
+    COMBOBOX        IDC_GW_CONNECT,7,66,57,36,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit Database Request...",IDC_GW_EDIT_DBREQ,77,65,112,
+                    14
+    EDITTEXT        IDC_GW_DATABASE_NAME,7,89,183,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_GW_RECORD_SOURCE,7,113,183,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,156,3,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,19,50,14
+    LTEXT           "Name",IDC_STATIC,7,7,20,9
+    LTEXT           "Connect",IDC_GW_CONNECT_STATIC,7,58,32,8
+    LTEXT           "Database Name",IDC_GW_DATABASE_NAME_STATIC,7,81,66,8
+    LTEXT           "Record Source ",IDC_GW_RECORD_SOURCE_STATIC,7,105,60,8
+END
+
+IDD_GW_ODBC_DLG DIALOG DISCARDABLE  0, 0, 219, 132
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ODBC Record Source Definition"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,154,3,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,24,58,14
+    LISTBOX         IDC_GW_TABLES,7,44,134,81,LBS_SORT | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "You may either:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,7,3,140,8
+    PUSHBUTTON      "SQL...",IDC_GW_SQL,154,45,58,14
+    PUSHBUTTON      "Query Builder...",IDC_GW_QBE,154,66,58,14
+    LTEXT           "A. Select one table to browse.",IDC_STATIC,15,13,131,8
+    LTEXT           "B. Click ""SQL..."" to write your own SQL",IDC_STATIC,
+                    15,23,130,8
+    LTEXT           "C. Use the Graphical Query Builder.",IDC_STATIC,15,33,
+                    131,8
+    CONTROL         "Read Only",IDC_GW_READONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,90,49,10
+    CONTROL         "Appendable",IDC_GW_APPENDABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,106,54,10
+END
+
+IDD_GW_SQL DIALOG DISCARDABLE  0, 0, 267, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GridWiz SQL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,210,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,24,50,14
+    EDITTEXT        IDC_GW_SQL,7,16,198,72,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Enter SQL",IDC_STATIC,7,7,68,8
+    PUSHBUTTON      "QBE",IDC_GW_QBE,210,44,50,14
+END
+
+IDD_GW_QBE DIALOG DISCARDABLE  0, 0, 423, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GridWiz QBE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_GW_TABLES,9,9,151,78,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_GW_FIELDS,173,9,164,78,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_GW_ORDER_BY,284,102,129,57,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_GW_GROUP_BY,147,102,129,57,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GW_ANDOR,14,180,35,34,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GW_FIELD_CRITERIA,54,180,126,79,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GW_OPERATOR,184,180,30,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GW_VALUE,219,181,127,79,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_GW_CRITERIA,13,200,333,51,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "VALUES",IDC_GW_USE_VALUES,"Button",BS_AUTORADIOBUTTON,
+                    353,172,52,11
+    CONTROL         "JOIN",IDC_GW_USE_JOIN,"Button",BS_AUTORADIOBUTTON,353,
+                    183,40,11
+    PUSHBUTTON      "Add",IDC_GW_ADD,356,202,45,14
+    PUSHBUTTON      "Update",IDC_GW_UPDATE,356,218,45,14
+    PUSHBUTTON      "Delete",IDC_GW_DELETE,356,234,45,14
+    DEFPUSHBUTTON   "Ok",IDOK,355,9,49,12
+    PUSHBUTTON      "Cancel",IDCANCEL,355,25,49,12
+    PUSHBUTTON      "Show SQL",IDC_GW_SHOW_QUERY,355,41,49,12
+    PUSHBUTTON      "Clear All",IDC_GW_CLEAR_ALL,355,57,49,12
+    GROUPBOX        " Filter / Where Clause",IDC_STATIC,8,162,406,96
+    LTEXT           "Field Name:",IDC_STATIC,55,171,46,8
+    LTEXT           "Op:",IDC_STATIC,185,171,11,8
+    LTEXT           "Field Value/Join Column",IDC_STATIC,220,171,91,8
+    CONTROL         "Select Table(s):",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,11,1,66,8
+    CONTROL         "Field list: (Drag items from here to other lists)",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,175,1,
+                    138,8
+    CONTROL         "Order by: (Drag from field list)",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,285,93,127,8
+    LTEXT           "Group by: (Drag from field list)",IDC_STATIC,149,93,126,
+                    9
+    LTEXT           "And/Or",IDC_STATIC,16,171,36,8
+    LISTBOX         IDC_GW_SELECTED_FIELDS,10,102,129,57,
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Select Fields: (Drag from field list)",IDC_STATIC,11,92,
+                    126,9
+END
+
+IDD_GW_GWFILE DIALOG DISCARDABLE  0, 0, 186, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Identify File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GW_FILE_NAME,7,15,118,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_GW_BROWSE,129,15,50,14
+    EDITTEXT        IDC_GW_ABSOLUTE_PATH,15,54,140,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GW_RELATIVE_PATH,15,79,140,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_GW_ABSOLUTE_FIRST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,160,57,10,8
+    CONTROL         "",IDC_GW_RELATIVE_FIRST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,160,82,10,8
+    DEFPUSHBUTTON   "OK",IDOK,27,135,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,103,135,50,14
+    LTEXT           "File Name:",IDC_STATIC,7,7,67,8
+    LTEXT           "Absolute",IDC_STATIC,15,46,42,8
+    LTEXT           "Relative",IDC_STATIC,15,71,33,8
+    EDITTEXT        IDC_GW_URL,15,104,140,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "URL",IDC_STATIC,16,96,21,8
+    GROUPBOX        "Path",IDC_STATIC,7,32,172,95
+    CTEXT           "Try\rFirst",IDC_STATIC,154,38,21,15
+    CONTROL         "",IDC_GW_URL_FIRST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,160,108,10,8
+END
+
+IDD_GW_PARAMETERS DIALOG DISCARDABLE  0, 0, 186, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    EDITTEXT        IDC_GW_PARAM,6,55,65,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Param",IDC_STATIC,7,46,21,8
+    LTEXT           "Value",IDC_STATIC,76,46,41,8
+    EDITTEXT        IDC_GW_VALUE,75,55,65,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_GW_PARAM_LIST,5,74,174,44,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "The following un-assigned parameters have been detected in the query object. Supply an appropraite value for each parameter.",
+                    IDC_STATIC,5,6,120,36
+    PUSHBUTTON      "Apply",IDC_GW_APPLY,144,55,34,14
+END
+
+IDD_GW_CONTEXT_MENU DIALOG DISCARDABLE  0, 0, 233, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Context Menu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GW_VALID_STRING_OBJECT_NAME,7,16,101,12,
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_GW_VALID_STRING_GRID,"Static",SS_BLACKFRAME | 
+                    WS_TABSTOP,7,40,222,87
+    DEFPUSHBUTTON   "OK",IDOK,179,2,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,179,18,50,14
+    LTEXT           "Name",-1,7,7,20,9
+END
+
+IDD_GW_SORT DIALOG DISCARDABLE  0, 0, 315, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sort"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,258,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,24,50,14
+    GROUPBOX        "Sort By",IDC_STATIC,7,7,242,28
+    COMBOBOX        IDC_SORT_COLUMN_1,15,17,86,30,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,109,19,19,8
+    COMBOBOX        IDC_SORT_COLUMN_TYPE_1,129,17,48,47,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "Ascending",IDC_SORT_ASCENDING_1,"Button",
+                    BS_AUTORADIOBUTTON,191,13,49,10
+    CONTROL         "Descending",IDC_SORT_DESCENDING_1,"Button",
+                    BS_AUTORADIOBUTTON,191,23,54,10
+    GROUPBOX        "Then By",IDC_STATIC,7,38,242,28
+    COMBOBOX        IDC_SORT_COLUMN_2,15,49,86,30,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,109,51,19,8
+    COMBOBOX        IDC_SORT_COLUMN_TYPE_2,129,49,48,54,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "Ascending",IDC_SORT_ASCENDING_2,"Button",
+                    BS_AUTORADIOBUTTON,191,44,49,10
+    CONTROL         "Descending",IDC_SORT_DESCENDING_2,"Button",
+                    BS_AUTORADIOBUTTON,191,54,54,10
+    GROUPBOX        "ThenBy",IDC_STATIC,7,70,242,28
+    COMBOBOX        IDC_SORT_COLUMN_3,15,81,86,30,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,109,83,19,8
+    COMBOBOX        IDC_SORT_COLUMN_TYPE_3,129,81,48,49,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "Ascending",IDC_SORT_ASCENDING_3,"Button",
+                    BS_AUTORADIOBUTTON,191,76,49,10
+    CONTROL         "Descending",IDC_SORT_DESCENDING_3,"Button",
+                    BS_AUTORADIOBUTTON,191,86,54,10
+    GROUPBOX        "ThenBy",IDC_STATIC,7,103,242,28
+    COMBOBOX        IDC_SORT_COLUMN_4,15,114,86,30,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,109,116,19,8
+    COMBOBOX        IDC_SORT_COLUMN_TYPE_4,129,114,48,49,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "Ascending",IDC_SORT_ASCENDING_4,"Button",
+                    BS_AUTORADIOBUTTON,191,109,49,10
+    CONTROL         "Descending",IDC_SORT_DESCENDING_4,"Button",
+                    BS_AUTORADIOBUTTON,191,119,54,10
+END
+
+IDD_GW_FIND DIALOG DISCARDABLE  0, 0, 236, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,24,50,14
+    LTEXT           "Find What",IDC_STATIC,98,8,34,8
+    EDITTEXT        IDC_GW_FIND_WHAT,98,16,77,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Replace ...",IDC_GW_REPLACE,180,42,50,14
+    CONTROL         "",IDC_GW_FIND_GRID,"Static",SS_BLACKFRAME,7,62,223,54
+    CONTROL         "Match Case",IDC_GW_MATCH_CASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,119,55,10
+    CONTROL         "Search All",IDC_GW_SEARCH_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,35,144,9
+    CONTROL         "Search Selection",IDC_GW_SEARCH_SELECTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,48,144,9
+    COMBOBOX        IDC_GW_CONDITION,7,16,39,89,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "Condition",IDC_STATIC,7,8,30,8
+    LTEXT           "Type",IDC_STATIC,52,8,17,8
+    COMBOBOX        IDC_GW_TYPE,52,16,41,75,CBS_DROPDOWNLIST | WS_TABSTOP
+END
+
+IDD_GW_REPLACE DIALOG DISCARDABLE  0, 0, 236, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Replace",IDC_GW_REPLACE,180,7,50,14
+    PUSHBUTTON      "Replace All",IDC_GW_REPLACE_ALL,180,24,50,14
+    LTEXT           "Find What",IDC_STATIC,98,8,34,8
+    EDITTEXT        IDC_GW_FIND_WHAT,98,16,77,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_GW_FIND_GRID,"Static",SS_BLACKFRAME,7,87,223,54
+    CONTROL         "Match Case",IDC_GW_MATCH_CASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,144,55,10
+    CONTROL         "Search All",IDC_GW_SEARCH_ALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,60,144,9
+    CONTROL         "Search Selection",IDC_GW_SEARCH_SELECTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,73,144,9
+    COMBOBOX        IDC_GW_CONDITION,7,16,39,89,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    LTEXT           "Condition",IDC_STATIC,7,8,30,8
+    LTEXT           "Type",IDC_STATIC,52,8,17,8
+    COMBOBOX        IDC_GW_TYPE,52,16,41,75,CBS_DROPDOWNLIST | WS_TABSTOP
+    LTEXT           "Replace With",IDC_STATIC,7,32,44,8
+    EDITTEXT        IDC_GW_REPLACE_WITH,7,41,88,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,180,41,50,14
+END
+
+#ifndef APSTUDIO_INVOKED  
+#ifdef _WIN32
+IDD_GW_DAO_DLG DIALOGEX 0, 0, 219, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Data Access Objects"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_GW_DAO_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,48,134,80,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",IDOK,154,7,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,28,58,14
+    PUSHBUTTON      "SQL...",IDC_GW_SQL,154,49,58,14
+    PUSHBUTTON      "Query Builder...",IDC_GW_QBE,154,70,58,14
+    CONTROL         "Read Only",IDC_GW_READONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,94,49,10
+    CONTROL         "Appendable",IDC_GW_APPENDABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,154,110,54,10
+    CONTROL         "You may either:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,7,7,140,8
+    LTEXT           "A. Select one table or view to browse.",IDC_STATIC,15,
+                    17,131,8
+    LTEXT           "B. Click ""SQL..."" to write your own SQL",IDC_STATIC,
+                    15,27,130,8
+    LTEXT           "C. Use the Graphical Query Builder.",IDC_STATIC,15,37,
+                    131,8
+END
+
+IDD_GW_BORDER_STYLE DIALOG DISCARDABLE  0, 0, 255, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Border Style"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Border ID",IDC_STATIC,3,4,81,83
+    CONTROL         "",IDC_GW_BORDER_OUTLINE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY | SS_SUNKEN | WS_TABSTOP,11,18,38,10
+    CONTROL         "",IDC_GW_BORDER_LEFT,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,11,30,38,10
+    CONTROL         "",IDC_GW_BORDER_RIGHT,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY | SS_SUNKEN | WS_TABSTOP,11,43,38,10
+    CONTROL         "",IDC_GW_BORDER_TOP,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,11,56,38,10
+    CONTROL         "",IDC_GW_BORDER_BOTTOM,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY | SS_SUNKEN | WS_TABSTOP,11,70,38,10
+    GROUPBOX        "Border Styles",IDC_STATIC,91,4,101,83
+    CONTROL         "",IDC_GW_BS_NONE,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,123,17,38,10
+    CONTROL         "",IDC_GW_BS_SINGLE,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,99,30,38,10
+    CONTROL         "",IDC_GW_BS_DOUBLE,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,99,42,38,10
+    CONTROL         "",IDC_GW_BS_TRIPLE,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,99,55,38,10
+    CONTROL         "",IDC_GW_BS_DOT,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,147,30,38,10
+    CONTROL         "",IDC_GW_BS_DASH,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    SS_SUNKEN | WS_TABSTOP,147,42,38,10
+    CONTROL         "",IDC_GW_BS_DOUBLE_LINE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY | SS_SUNKEN | WS_TABSTOP,147,55,38,10
+    CONTROL         "",IDC_GW_BORDER_COLOR,"Static",SS_BLACKFRAME,125,72,37,
+                    9
+    PUSHBUTTON      "...",IDC_GW_COLOR_DLG,165,70,15,12
+    DEFPUSHBUTTON   "OK",IDOK,199,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,23,50,14
+    LTEXT           "Color",IDC_STATIC,105,74,19,8
+    LTEXT           "Outline",IDC_STATIC,51,18,23,8
+    LTEXT           "Left",IDC_STATIC,51,30,13,8
+    LTEXT           "Right",IDC_STATIC,51,43,18,8
+    LTEXT           "Top",IDC_STATIC,51,56,14,8
+    LTEXT           "Bottom",IDC_STATIC,51,70,23,8
+END
+#endif
+
+IDD_EVAL DIALOG DISCARDABLE  0, 0, 154, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GridWiz Evaluation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,48,92,50,14
+    LTEXT           "You're Using the GridWiz Evaluation Version. Contact McRae Software International, Inc. to purchase the latest controls.",
+                    IDC_STATIC,6,2,148,33
+    LTEXT           "McRae Software International, Inc.\r17180 Creaighton Drive\rChagrin Falls, Ohio 44023\r(216) 543-9242",
+                    IDC_STATIC,34,36,113,37
+    LTEXT           "http://www.mcraesoft.com",IDC_STATIC,33,79,87,8
+    ICON            203,IDC_STATIC,5,37,18,20
+END
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_GW_ROWSIZE          CURSOR  DISCARDABLE     "RES\\ROWSIZE.CUR"
+IDC_GW_ROWSELECT        CURSOR  DISCARDABLE     "RES\\ROWSELEC.CUR"
+IDC_GW_GRIDSELECT       CURSOR  DISCARDABLE     "RES\\GRIDSELE.CUR"
+IDC_GW_COLUMNSIZE       CURSOR  DISCARDABLE     "RES\\COLUMNSI.CUR"
+IDC_GW_COLSELECT        CURSOR  DISCARDABLE     "RES\\COLSELEC.CUR"
+IDC_GW_SELECTION        CURSOR  DISCARDABLE     "RES\\SELECTIO.CUR"
+IDC_GW_VALID_TARGET     CURSOR  DISCARDABLE     "RES\\VALID_TA.CUR"
+IDC_GW_INVALID_TARGET   CURSOR  DISCARDABLE     "RES\\CURSOR1.CUR"
+IDC_GW_NOSELECT         CURSOR  DISCARDABLE     "RES\\NOSELECT.CUR"
+IDC_GW_SCROLLSIZE       CURSOR  DISCARDABLE     "RES\\SCROLLSI.CUR"
+IDC_GW_COLUMNSHOW       CURSOR  DISCARDABLE     "res\\gw_colum.cur"
+IDC_GW_ROWSHOW          CURSOR  DISCARDABLE     "res\\gw_rowsi.cur"
+IDC_PROGRESS_DATE       CURSOR  DISCARDABLE     "res\\progress.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""grid.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GW_GRIDOPTIONS DLGINIT
+BEGIN
+    28028, 0x403, 11, 0
+0x7247, 0x6469, 0x4c20, 0x6e69, 0x7365, "\000" 
+    28028, 0x403, 6, 0
+0x6554, 0x7478, 0x0020, 
+    28028, 0x403, 11, 0
+0x6142, 0x6b63, 0x7267, 0x756f, 0x646e, "\000" 
+    28028, 0x403, 10, 0
+0x6948, 0x6867, 0x696c, 0x6867, 0x0074, 
+    28028, 0x403, 11, 0
+0x6946, 0x6578, 0x2064, 0x6543, 0x6c6c, "\000" 
+    28028, 0x403, 13, 0
+0x7543, 0x7272, 0x6e65, 0x2074, 0x6543, 0x6c6c, "\000" 
+    0
+END
+
+IDD_GW_VALID_STRINGS_DLG DLGINIT
+BEGIN
+    IDC_GW_CONNECT, 0x403, 7, 0
+0x6341, 0x6563, 0x7373, "\000" 
+    IDC_GW_CONNECT, 0x403, 6, 0
+0x444f, 0x4342, 0x003b, 
+    0
+END
+
+IDD_GW_QBE DLGINIT
+BEGIN
+    IDC_GW_ANDOR, 0x403, 4, 0
+0x4e41, 0x0044, 
+    IDC_GW_ANDOR, 0x403, 3, 0
+0x524f, "\000" 
+    IDC_GW_OPERATOR, 0x403, 2, 0
+0x003d, 
+    IDC_GW_OPERATOR, 0x403, 2, 0
+0x003c, 
+    IDC_GW_OPERATOR, 0x403, 2, 0
+0x003e, 
+    IDC_GW_OPERATOR, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_GW_OPERATOR, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_GW_OPERATOR, 0x403, 3, 0
+0x3e3c, "\000" 
+    IDC_GW_OPERATOR, 0x403, 5, 0
+0x694c, 0x656b, "\000" 
+    0
+END
+
+IDD_GW_SORT DLGINIT
+BEGIN
+    IDC_SORT_COLUMN_TYPE_1, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_SORT_COLUMN_TYPE_1, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_SORT_COLUMN_TYPE_1, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    IDC_SORT_COLUMN_TYPE_2, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_SORT_COLUMN_TYPE_2, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_SORT_COLUMN_TYPE_2, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    IDC_SORT_COLUMN_TYPE_3, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_SORT_COLUMN_TYPE_3, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_SORT_COLUMN_TYPE_3, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    IDC_SORT_COLUMN_TYPE_4, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_SORT_COLUMN_TYPE_4, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_SORT_COLUMN_TYPE_4, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    0
+END
+
+IDD_GW_FIND DLGINIT
+BEGIN
+    IDC_GW_CONDITION, 0x403, 2, 0
+0x003d, 
+    IDC_GW_CONDITION, 0x403, 2, 0
+0x003e, 
+    IDC_GW_CONDITION, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_GW_CONDITION, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_GW_CONDITION, 0x403, 6, 0
+0x4f4e, 0x2054, 0x003d, 
+    IDC_GW_TYPE, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_GW_TYPE, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_GW_TYPE, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    0
+END
+
+IDD_GW_REPLACE DLGINIT
+BEGIN
+    IDC_GW_CONDITION, 0x403, 2, 0
+0x003d, 
+    IDC_GW_CONDITION, 0x403, 2, 0
+0x003e, 
+    IDC_GW_CONDITION, 0x403, 3, 0
+0x3d3e, "\000" 
+    IDC_GW_CONDITION, 0x403, 3, 0
+0x3d3c, "\000" 
+    IDC_GW_CONDITION, 0x403, 6, 0
+0x4f4e, 0x2054, 0x003d, 
+    IDC_GW_TYPE, 0x403, 5, 0
+0x6554, 0x7478, "\000" 
+    IDC_GW_TYPE, 0x403, 7, 0
+0x754e, 0x626d, 0x7265, "\000" 
+    IDC_GW_TYPE, 0x403, 5, 0
+0x6144, 0x6574, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_GW_RUBBER_BAND      BITMAP  DISCARDABLE     "RES\\RUBBER_B.BMP"
+IDB_GW_SPINBTN          BITMAP  DISCARDABLE     "RES\\SPINBTN.BMP"
+IDB_GW_VERT_FINE        BITMAP  DISCARDABLE     "RES\\VERT_FIN.BMP"
+IDB_GW_VERT_COURSE      BITMAP  DISCARDABLE     "RES\\VERT_COU.BMP"
+IDB_GW_FDIAG_FINE       BITMAP  DISCARDABLE     "RES\\FDIAG_FI.BMP"
+IDB_GW_HORZ_COURSE      BITMAP  DISCARDABLE     "RES\\HORZ_COU.BMP"
+IDB_GW_HORZ_FINE        BITMAP  DISCARDABLE     "RES\\HORZ_FIN.BMP"
+IDB_GW_BDIAG_FINE       BITMAP  DISCARDABLE     "RES\\BDIAG_FI.BMP"
+IDB_GW_FDIAG_COURSE     BITMAP  DISCARDABLE     "RES\\FDIAG_CO.BMP"
+IDB_GW_BDIAG_COURSE     BITMAP  DISCARDABLE     "RES\\BDIAG_CO.BMP"
+IDB_GW_DIAMOND          BITMAP  DISCARDABLE     "RES\\DIAMOND.BMP"
+IDB_GW_DOLLAR           BITMAP  DISCARDABLE     "RES\\DOLLAR.BMP"
+IDB_GW_CROSS_FINE       BITMAP  DISCARDABLE     "RES\\CROSS_FI.BMP"
+IDB_GW_CROSS_COURSE     BITMAP  DISCARDABLE     "RES\\CROSS_CO.BMP"
+IDB_GW_CHECKER          BITMAP  DISCARDABLE     "RES\\CHECKER.BMP"
+IDB_GW_DITHER           BITMAP  DISCARDABLE     "RES\\DITHER.BMP"
+IDB_GW_GRID             BITMAP  DISCARDABLE     "RES\\GRID.BMP"
+IDB_GW_SPARSE           BITMAP  DISCARDABLE     "RES\\SPARSE.BMP"
+ACCEPTU                 BITMAP  DISCARDABLE     "res\\accept.bmp"
+ACCEPTD                 BITMAP  DISCARDABLE     "res\\acceptd.bmp"
+ACCEPTF                 BITMAP  DISCARDABLE     "res\\acceptu1.bmp"
+ACCEPTX                 BITMAP  DISCARDABLE     "res\\acceptu2.bmp"
+DELETEU                 BITMAP  DISCARDABLE     "res\\deleteu.bmp"
+DELETED                 BITMAP  DISCARDABLE     "res\\deleteu1.bmp"
+DELETEF                 BITMAP  DISCARDABLE     "res\\deleteu2.bmp"
+DELETEX                 BITMAP  DISCARDABLE     "res\\deleteu3.bmp"
+IDB_GW_DNARROW          BITMAP  DISCARDABLE     "res\\dnarrow.bmp"
+IDB_GW_EDIT_ADDROW      BITMAP  DISCARDABLE     "RES\\GWEDITAD.BMP"
+IDB_GW_SPLAT            BITMAP  DISCARDABLE     "RES\\GW_SPLAT.BMP"
+IDB_GW_CURRENT_RECORD   BITMAP  DISCARDABLE     "res\\gwcurrec.bmp"
+IDB_GW_PLUS             BITMAP  DISCARDABLE     "res\\gwplus.bmp"
+IDB_GW_MINUS            BITMAP  DISCARDABLE     "res\\gwminus.bmp"
+IDB_GW_CHECKBOX_ON      BITMAP  DISCARDABLE     "res\\gwchkN.bmp"
+IDB_GW_CHECKBOX_OFF_DISABLE BITMAP  DISCARDABLE     "res\\gwchkOD.bmp"
+IDB_GW_CHECKBOX_OFF     BITMAP  DISCARDABLE     "res\\gw_check.bmp"
+IDB_GW_CHECKBOX_ON_DISABLE BITMAP  DISCARDABLE     "res\\gwchkND.bmp"
+IDB_GW_RADIO_OFF        BITMAP  DISCARDABLE     "res\\gw_radio.bmp"
+IDB_GW_RADIO_OFF_DISABLE BITMAP  DISCARDABLE     "res\\gwRadOD.bmp"
+IDB_GW_RADIO_ON         BITMAP  DISCARDABLE     "res\\gwRadN.bmp"
+IDB_GW_RADIO_ON_DISABLE BITMAP  DISCARDABLE     "res\\gwRadND.bmp"
+IDB_GW_FOLDER_CLOSED    BITMAP  DISCARDABLE     "res\\foldclse.bmp"
+IDB_GW_FOLDER_OPEN      BITMAP  DISCARDABLE     "res\\foldopen.bmp"
+IDB_GW_DOCUMENT         BITMAP  DISCARDABLE     "res\\gw_docum.bmp"
+IDB_GW_DOCUMENT_NEW     BITMAP  DISCARDABLE     "res\\GWDOCNEW.bmp"
+IDB_GW_SLIDER           BITMAP  DISCARDABLE     "res\\slider.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GW_VALID_STRINGS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_GW_ODBC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_GW_SQL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GW_GWFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_GW_PARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_GW_CONTEXT_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_GW_SORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_GW_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_GW_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_GW_DAO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GW_ALPHABET         "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    IDS_GW_CLIPBOARD_OPEN_ERROR "Cannot open the Clipboard"
+    IDS_GW_CLIPBOARD_CLEAR_ERROR "Cannot clear the Clipboard"
+    IDS_GW_CLIPBOARD_CLOSE_ERROR "Cannot close the Clipboard"
+    IDS_GW_TRUE             "True"
+    IDS_GW_FALSE            "False"
+    IDS_GW_DATA_TYPE_CONVERSION_ERROR "Data type conversion error."
+    IDS_GW_SELECTION_TOO_LARGE "Selection to large, truncating"
+    IDS_GW_DEFAULT_STRING   "Some String"
+    IDS_GW_PASTE_TRUNCATE   "The dimensions of the data on the clipboard is larger than the selected region. Truncate clipboard data?"
+    IDS_GW_CELL_VALUE_OUT_OF_RANGE 
+                            "Numeric value is out of valid range for this cell."
+    IDS_GW_GCOLOSTFOCUSTOANOTHERWINDOW "GCOLostFocusToAnotherWIndow"
+    IDS_GW_INSERT_TAB       "Insert ..."
+    IDS_GW_DELETE_TAB       "Delete"
+    IDS_GW_RENAME_TAB       "Rename..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GW_COPY             "Copy"
+    IDS_GW_CUT              "Cut"
+    IDS_GW_PASTE            "Paste"
+    IDS_GW_CLEAR            "Clear"
+    IDS_GW_SORT             "Sort ..."
+    IDS_GW_HIDE_COLUMN      "Hide Column"
+    IDS_GW_HIDE_ROW         "Hide Row"
+    IDS_GW_FIND             "Find ..."
+    IDS_GW_FIND_NEXT        "Find Next"
+    IDS_GW_INVALID_DATE     "Invalid Date."
+    IDS_APPEARANCE_0        "Flat"
+    IDS_APPEARANCE_1        "3-D"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GW_INSERT_TAB        "Insert a new window tab."
+    ID_GW_DELETE_TAB        "Delete the selected window tab."
+    ID_GW_RENAME_TAB        "Rename the selected window tab."
+    ID_GW_ARRANGE_TABS      "Arrange the tabs on this window."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GW_ARRANGE_TABS     "Arrange Tabs ..."
+    IDS_SELECTION_SINGLE    "1 - Single"
+    IDS_SELECTION_MULTIPLE  "2 - Multiple"
+    IDS_SELECTION_EXTENDED  "3 - Extended"
+    IDS_SCROLLBAR_NONE      "0 - None"
+    IDS_SCROLLBAR_HORIZONTAL "1 - Horizontal"
+    IDS_SCROLLBAR_VERTICAL  "2 - Vertical"
+    IDS_SCROLLBAR_BOTH      "3 - Both"
+    IDS_UNITS_PIXELS        "0 - Pixels"
+    IDS_UNITS_CHARS         "1 - Chars"
+    IDS_GW_INPUTMASK_ERROR  "Input Mask Error"
+    IDS_REMOVE_VSO          "Are you sure you want to remove this Valid Strings Object?"
+END
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CGWGridCellObject   "CGWGridCellObject"
+    IDS_CGWEditCell         "CGWEditCell"
+    IDS_CGWComboBoxCell     "CGWComboBoxCell"
+    IDS_CGWDropDownCell     "CGWDropDownListCell"
+    IDS_CGWDropDownGridCell "CGWDropDownGrid"
+    IDS_CGWCheckboxCell     "CGWCheckBoxCell"
+    IDS_CGWRadioBtnCell     "CGWRadioBtnCell"
+    IDS_CGWHeaderCell       "CGWHeaderCell"
+    IDS_CGWLetteredHeaderCell "CGWLetteredHeaderCell"
+    IDS_CGWNumberedHeaderCell "CGWNumberedHeaderCell"
+    IDS_CGWIntCell          "CGWIntCell"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CGWFloatCell        "CGWFloatCell"
+    IDS_CGWDateTimeCell     "CGWDateTimeCell"
+    IDS_CGWHierarchyCell    "CHierarchyCell"
+    IDS_CGWDialogPromptCell "CGWDialogPromptCell"
+    IDS_CGWButtonCell       "CGWButtonCell"
+    IDS_CGWSpinBtnCell      "CGWSpinBtnCell"
+    IDS_CGWProgressCell     "CGWProgressCell"
+    IDS_CGWTrackBarCell     "CGWTrackBarCell"
+    IDS_CGWOCXCell          "CGWOCXCell"
+END
+
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GW_AUTO_NUMBER     "(AutoNumber)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

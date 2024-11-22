@@ -1,0 +1,17 @@
+# Ignore build output
+*.obj
+*.exe
+*.pch
+*.idb
+*.pdb
+*.ilk
+*.aps
+Debug/
+Release/
+
+# Ignore user-specific files
+*.ncb
+*.opt
+*.plg
+*.suo
+*.user

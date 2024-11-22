@@ -1,0 +1,44 @@
+// Configuration file for part code list within
+// various Ayrshire sites
+
+// Add sites and product codes to suit
+
+// Subject to change or removal at any time
+
+$SITE$
+IRVINE
+CI100
+CI120
+CI127
+CI140
+CI150
+CI165
+CI180
+CI200
+CI220
+CI240
+$END$
+
+$SITE$
+WARLEY
+CF100
+CF120
+CF127
+CF140
+CF150
+CF165
+CF180
+CF200
+CF220
+CF240
+CW100
+CW120
+CW127
+CW140
+CW150
+CW165
+CW180
+CW200
+CW220
+CW240
+$END$

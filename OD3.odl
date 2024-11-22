@@ -1,0 +1,23 @@
+#include "olectl.h"
+[ uuid(526E36B7-F346-4790-B741-75D9E5B96F4B), version(1.0) ]
+// COM interface
+library OD3
+{
+    importlib("stdole32.tlb");
+    importlib("stdole2.tlb");
+
+    [ uuid(BFCE3508-B4CF-40eb-94BE-8ACEFE65DE1F),
+      oleautomation,
+      dual
+    ]
+    interface IApplication : IDispatch
+    {
+        [id(1), helpstring("method Show")] HRESULT Show (void);
+    };
+
+    [ uuid(049946FB-0680-49fe-8CD5-E64F7276CCA7) ]
+    coclass Application
+    {
+        [default] interface IApplication;
+    };
+}

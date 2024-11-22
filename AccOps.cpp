@@ -1,0 +1,27 @@
+// AccOps.cpp: implementation of the CAccOps class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "OD3.h"
+#include "AccOps.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CAccOps::CAccOps()
+{
+
+}
+
+CAccOps::~CAccOps()
+{
+
+}

@@ -1,0 +1,183 @@
+// Created by Microsoft (R) C/C++ Compiler Version 11.00.7149 (bf319a9c).
+//
+//
+// C++ source equivalent of Win32 type library GWDataLink.tlb
+// compiler-generated file created 09/11/97 at 17:13:40 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ DataLink;
+struct __declspec(uuid("422cb172-209b-11d1-a3a7-444553540000"))
+/* dual interface */ IDataLink;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IDataLink, __uuidof(IDataLink));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("422cb173-209b-11d1-a3a7-444553540000"))
+DataLink;
+    // [ default ] interface IDataLink
+
+struct __declspec(uuid("422cb172-209b-11d1-a3a7-444553540000"))
+IDataLink : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT GetFieldText (
+        long nRow,
+        long nField,
+        BSTR * csFieldText );
+    HRESULT SetFieldText (
+        long nRow,
+        long nField,
+        BSTR * csFieldText,
+		long * pdSucceeded);
+    HRESULT GetFieldName (
+        long nField,
+        BSTR * strFieldName );
+    HRESULT GetFieldSize (
+        long nField,
+        long * lFieldSize );
+    HRESULT GetFieldType (
+        long nField,
+        short * pType );
+    HRESULT GetFieldRequired (
+        long nField,
+        long * pbRequired );
+    HRESULT GetFieldAllowZeroLengthString (
+        long nField,
+        long * pbAllowZeroLengthString );
+    HRESULT GetFieldDefaultText (
+        long nField,
+        BSTR * pbstrDefaultText );
+    HRESULT GetFieldAttributes (
+        long nField,
+        long * plFieldAttributes );
+    HRESULT Edit ( );
+    HRESULT Add ( );
+    HRESULT Delete ( );
+    HRESULT Update (
+		long * pbSucceeded);
+    HRESULT IsEOF (
+        long * pbIsEOF );
+    HRESULT IsBOF (
+        long * pbIsBOF );
+    HRESULT MoveNext (
+        long * plCurrentRow );
+    HRESULT MoveFirst ( );
+    HRESULT MoveLast (
+        long * plCurrentRow );
+    HRESULT MovePrev (
+        long * plCurrentRow );
+    HRESULT Move (
+        long lMoveRows,
+        long * plCurrentRow );
+    HRESULT PositionAbsolute (
+        long nRow,
+        long * plCurrentRow );
+    HRESULT IsOpen (
+        long * pbIsOpen );
+    HRESULT IsReadOnly (
+        long * pbIsReadOnly );
+    HRESULT GetFieldCount (
+        long * plFieldCount );
+    HRESULT CanBookMark (
+        long * pbCanBookMark );
+    HRESULT GetBookMark (
+        VARIANT * lpvBookMark );
+    HRESULT SetBookMark (
+        VARIANT * varBookMark );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_GetFieldText (
+        long nRow,
+        long nField,
+        BSTR * csFieldText ) = 0;
+    virtual HRESULT __stdcall raw_SetFieldText (
+        long nRow,
+        long nField,
+        BSTR * csFieldText,
+		long * pbSucceeded) = 0;
+    virtual HRESULT __stdcall raw_GetFieldName (
+        long nField,
+        BSTR * strFieldName ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldSize (
+        long nField,
+        long * lFieldSize ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldType (
+        long nField,
+        short * pType ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldRequired (
+        long nField,
+        long * pbRequired ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldAllowZeroLengthString (
+        long nField,
+        long * pbAllowZeroLengthString ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldDefaultText (
+        long nField,
+        BSTR * pbstrDefaultText ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldAttributes (
+        long nField,
+        long * plFieldAttributes ) = 0;
+    virtual HRESULT __stdcall raw_Edit ( ) = 0;
+    virtual HRESULT __stdcall raw_Add ( ) = 0;
+    virtual HRESULT __stdcall raw_Delete ( ) = 0;
+    virtual HRESULT __stdcall raw_Update (
+		long * pbSucceedded ) = 0;
+    virtual HRESULT __stdcall raw_IsEOF (
+        long * pbIsEOF ) = 0;
+    virtual HRESULT __stdcall raw_IsBOF (
+        long * pbIsBOF ) = 0;
+    virtual HRESULT __stdcall raw_MoveNext (
+        long * plCurrentRow ) = 0;
+    virtual HRESULT __stdcall raw_MoveFirst ( ) = 0;
+    virtual HRESULT __stdcall raw_MoveLast (
+        long * plCurrentRow ) = 0;
+    virtual HRESULT __stdcall raw_MovePrev (
+        long * plCurrentRow ) = 0;
+    virtual HRESULT __stdcall raw_Move (
+        long lMoveRows,
+        long * plCurrentRow ) = 0;
+    virtual HRESULT __stdcall raw_PositionAbsolute (
+        long nRow,
+        long * plCurrentRow ) = 0;
+    virtual HRESULT __stdcall raw_IsOpen (
+        long * pbIsOpen ) = 0;
+    virtual HRESULT __stdcall raw_IsReadOnly (
+        long * pbIsReadOnly ) = 0;
+    virtual HRESULT __stdcall raw_GetFieldCount (
+        long * plFieldCount ) = 0;
+    virtual HRESULT __stdcall raw_CanBookMark (
+        long * pbCanBookMark ) = 0;
+    virtual HRESULT __stdcall raw_GetBookMark (
+        VARIANT * lpvBookMark ) = 0;
+    virtual HRESULT __stdcall raw_SetBookMark (
+        VARIANT * varBookMark ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "GWDataLink.tli"
+
+
+#pragma pack(pop)

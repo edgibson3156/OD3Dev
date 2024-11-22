@@ -1,0 +1,21 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by OD3.rc
+//
+#define HIDC_COMBO_PROFILE              0x808b03ee    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_COMBO_SPC                  0x808b03fa    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_DELETE_BEAM                0x808b0403    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EB_SLOPE                   0x808b03ec    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_BDL_COUNT             0x808b03f4    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_LENGTH                0x808b03f3    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_MARK                  0x808b03f1    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_OHANG1                0x808b03f5    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_OHANG2                0x808b03ed    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_QTY                   0x808b03f2    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_SPAN1                 0x808b03f7    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_SPAN2                 0x808b03f8    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_EDIT_SPAN3                 0x808b03f9    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_NEXT_BUTTON                0x808b0400    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_PREVIOUS__BUTTON           0x808b03ff    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_RADIO_MTYPE1               0x808b03ef    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_RADIO_MTYPE2               0x808b03f0    // IDD_MANUAL_BEAM_INPUT
+#define HIDC_SAVE_BUTTON                0x808b0401    // IDD_MANUAL_BEAM_INPUT

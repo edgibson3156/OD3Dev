@@ -1,0 +1,5 @@
+Version 2.5.17r2
+
+~~~NEW~~~
+* >50 Custom Holes now possible
+* >Transfer to Usb option added (drive E:\)

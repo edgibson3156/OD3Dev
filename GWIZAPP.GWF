@@ -1,0 +1,24 @@
+[General Info]
+Application=OD3
+ClassWizard=C:\Soft_Eng\OD3\Development\OD3\OD3.clw
+Resources=OD3 C:\Development\OD3\ OD3.rc
+ClassCount=2
+Class1=CExtraHolesGrid
+LastClass=COD3GridCtrl
+Class2=COD3GridCtrl
+
+[CLS:CExtraHolesGrid]
+Type=0
+HeaderFile=extraholes.h
+ImplementationFile=Extraholes.cpp
+BaseClass=CGWGridCtrl
+ClassType=GRID
+LastObject=CExtraHolesGrid
+
+[CLS:COD3GridCtrl]
+Type=0
+HeaderFile=od3gridctrl.h
+ImplementationFile=od3gridctrl.cpp
+BaseClass=CGWGridCtrl
+ClassType=GRID
+LastObject=COD3GridCtrl

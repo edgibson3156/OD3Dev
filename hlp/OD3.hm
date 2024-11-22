@@ -1,0 +1,99 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_INDICATOR_MSG                       0x10065
+HID_INDICATOR_PROGRESS                  0x10066
+HID_PROCESS_ADD                         0x18003
+HID_ADD_NEWITEM                         0x18004
+HID_DB_CONNECT                          0x18008
+HID_DB_DISCONNECT                       0x18009
+HID_OPEN_SYSCONFIG                      0x1800A
+HID_PROCESS_VALIDATE                    0x1800B
+HID_PROCESS_GENERATE                    0x1800C
+HID_FILE_IMPORT_D3                      0x18010
+HID_FILE_IMPORT_PROJECTSETTINGS         0x18011
+HID_PROCESS_ADD_NEWITEM                 0x18012
+HID_PROCESS_ADD_NEWBEAM                 0x18013
+HID_PRINT_BEAM                          0x18015
+HID_PRINT_ACCESSORY                     0x18016
+HID_PROCESS_DELETE_BEAM                 0x18017
+HID_PROCESS_ADD_NEWACCESSORY            0x18019
+HID_PROCESS_VALIDATE_ALL                0x1801A
+HID_PROCESS_VALIDATE_ITEM               0x1801B
+HID_PROCESS_GENERATE_ITEM               0x1801C
+HID_PROCESS_GENERATE_ALL                0x1801D
+HID_PROCESS_DELETE_ITEM                 0x1801F
+HID_PROCESS_DELETE_ACCESSORY            0x18021
+HID_DELETEITEM                          0x18022
+HID_DELETE_ELEMENT                      0x18023
+HID_FILE_TRANSFER                       0x18025
+HID_PROCESS_PRINT_ALL                   0x18026
+HID_PROCESS_PRINT_ITEM                  0x18027
+HID_ITEM_GENERATE                       0x18028
+HID_PROCESS_PRINT_THIS                  0x18029
+HID_EDIT_ELEMENT                        0x1802A
+HID_ELEMENT_DELETE                      0x1802B
+HID_ELEMENT_EDIT                        0x1802C
+HID_ITEM_ADD_BEAM                       0x1802D
+HID_ITEM_TRANSFER                       0x1802E
+HID_ITEM_VALIDATE                       0x1802F
+HID_ITEM_PRINT                          0x18030
+HID_ELEMENT_CUT                         0x18032
+HID_ELEMENT_COPY                        0x18033
+HID_ELEMENT_PASTE                       0x18034
+HID_ITEM_DELETE                         0x18036
+HID_DUMP_SETREPORTTYPE_ALLITEMS         0x18037
+HIDM_SELECTALLITEMS                     0x18038
+HIDM_PRINTTHISELEMENT                   0x1803B
+HIDM_SYS_SELALL                         0x1803C
+HIDM_SYS_DEL                            0x1803D
+HIDM_IMPORT_ASW                         0x1803E
+HIDM_ADVANCED_MODE                      0x1803F
+HIDM_VAL_SELECTION                      0x18040
+HIDM_GEN_SELECTION                      0x18041
+HIDM_REP_SELECTION                      0x18042
+HIDM_TRAN_SELECTION                     0x18043
+HIDM_EXPORT_D3                          0x18045
+HIDM_PRINT_SUMMARY                      0x18047
+HIDM_PRINT_JOBSHEETS                    0x18048
+HIDM_COIL_SENDJOB                       0x18049
+HIDM_COIL_UPDATEJOB                     0x1804A
+HIDM_COIL_PRINTLIVE                     0x1804B
+HIDM_COIL_EXPORTLIVE                    0x1804C
+HID_STATIC                              0x1FFFF
+HID_FILE_TRANSFER2                      0x27530
+HID_ITEM_TRANSFER2                      0x27531
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_OD3TYPE                            0x20081
+HIDR_POPUPMENUS                         0x20098
+HIDR_LEFTPOPUP                          0x20099
+HIDR_SYSASS_POP                         0x200A0
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_NEW_PROJECT                        0x20082
+HIDD_PROJECT_OPTIONS_DIALOG             0x20083
+HIDD_ASSOCIATIONS_PAGE                  0x20084
+HIDD_INPUTFILES_PAGE                    0x20085
+HIDD_MANUALINPUT_PAGE                   0x20086
+HIDD_OUTPUTFILES_PAGE                   0x20087
+HIDD_PROCESSING_PAGE                    0x20088
+HIDD_ACC_DIALOG                         0x20089
+HIDD_MANUAL_BEAM_INPUT                  0x2008B
+HIDD_REPORTS_PAGE                       0x20097
+HIDD_SELECT_ITEMS_DIALOG                0x20098
+HIDD_ITEMS_LIST_DIALOG                  0x20099
+HIDD_DIALOG1                            0x2009C
+HIDD_CEE_SECTION                        0x200A1
+HIDD_LISTACC                            0x200A2
+HIDD_SPLITD3                            0x200A3
+HIDD_SPLASH                             0x200A7
+HIDD_WHATSNEW                           0x200AA
+HIDD_WERNIK                             0x200AB
+HIDD_MESSAGE                            0x200AD
+HIDD_UPDATECOILSTATUS                   0x200AE
+ 
+// Frame Controls (IDW_*) 

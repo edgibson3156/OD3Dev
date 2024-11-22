@@ -1,0 +1,174 @@
+// Created by Microsoft (R) C/C++ Compiler Version 11.00.7149 (bf319a9c).
+//
+// Debug/GWDataLink.tli
+//
+// Wrapper implementations for Win32 type library GWDataLink.tlb
+// compiler-generated file created 09/11/97 at 17:13:40 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface IDataLink wrapper method implementations
+//
+
+inline HRESULT IDataLink::GetFieldText ( long nRow, long nField, BSTR * csFieldText ) {
+    HRESULT _hr = raw_GetFieldText(nRow, nField, csFieldText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::SetFieldText ( long nRow, long nField, BSTR * csFieldText, long * pbSucceeded   ) {
+    HRESULT _hr = raw_SetFieldText(nRow, nField, csFieldText, pbSucceeded);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldName ( long nField, BSTR * strFieldName ) {
+    HRESULT _hr = raw_GetFieldName(nField, strFieldName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldSize ( long nField, long * lFieldSize ) {
+    HRESULT _hr = raw_GetFieldSize(nField, lFieldSize);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldType ( long nField, short * pType ) {
+    HRESULT _hr = raw_GetFieldType(nField, pType);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldRequired ( long nField, long * pbRequired ) {
+    HRESULT _hr = raw_GetFieldRequired(nField, pbRequired);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldAllowZeroLengthString ( long nField, long * pbAllowZeroLengthString ) {
+    HRESULT _hr = raw_GetFieldAllowZeroLengthString(nField, pbAllowZeroLengthString);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldDefaultText ( long nField, BSTR * pbstrDefaultText ) {
+    HRESULT _hr = raw_GetFieldDefaultText(nField, pbstrDefaultText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldAttributes ( long nField, long * plFieldAttributes ) {
+    HRESULT _hr = raw_GetFieldAttributes(nField, plFieldAttributes);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::Edit ( ) {
+    HRESULT _hr = raw_Edit();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::Add ( ) {
+    HRESULT _hr = raw_Add();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::Delete ( ) {
+    HRESULT _hr = raw_Delete();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::Update ( long * pbSucceeded  ) {
+    HRESULT _hr = raw_Update(pbSucceeded);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::IsEOF ( long * pbIsEOF ) {
+    HRESULT _hr = raw_IsEOF(pbIsEOF);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::IsBOF ( long * pbIsBOF ) {
+    HRESULT _hr = raw_IsBOF(pbIsBOF);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::MoveNext ( long * plCurrentRow ) {
+    HRESULT _hr = raw_MoveNext(plCurrentRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::MoveFirst ( ) {
+    HRESULT _hr = raw_MoveFirst();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::MoveLast ( long * plCurrentRow ) {
+    HRESULT _hr = raw_MoveLast(plCurrentRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::MovePrev ( long * plCurrentRow ) {
+    HRESULT _hr = raw_MovePrev(plCurrentRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::Move ( long lMoveRows, long * plCurrentRow ) {
+    HRESULT _hr = raw_Move(lMoveRows, plCurrentRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::PositionAbsolute ( long nRow, long * plCurrentRow ) {
+    HRESULT _hr = raw_PositionAbsolute(nRow, plCurrentRow);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::IsOpen ( long * pbIsOpen ) {
+    HRESULT _hr = raw_IsOpen(pbIsOpen);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::IsReadOnly ( long * pbIsReadOnly ) {
+    HRESULT _hr = raw_IsReadOnly(pbIsReadOnly);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetFieldCount ( long * plFieldCount ) {
+    HRESULT _hr = raw_GetFieldCount(plFieldCount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::CanBookMark ( long * pbCanBookMark ) {
+    HRESULT _hr = raw_CanBookMark(pbCanBookMark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::GetBookMark ( VARIANT * lpvBookMark ) {
+    HRESULT _hr = raw_GetBookMark(lpvBookMark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IDataLink::SetBookMark ( VARIANT * varBookMark ) {
+    HRESULT _hr = raw_SetBookMark(varBookMark);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

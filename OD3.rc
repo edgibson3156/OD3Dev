@@ -1,0 +1,1424 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\OD3.ico"
+IDR_OD3TYPE             ICON    DISCARDABLE     "res\\OD3Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_PROCESS_ADD_NEWITEM, VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_PROCESS_GENERATE_ALL, VIRTKEY, NOINVERT
+    "I",            ID_FILE_IMPORT_D3,      VIRTKEY, CONTROL, NOINVERT
+    "L",            IDT_STANDARD_TEMP_LOAD, VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_FILE_TRANSFER,       VIRTKEY, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,5,19
+ PRODUCTVERSION 2,5,19
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "Order Detailing and Manufacture Software\0"
+            VALUE "CompanyName", "Ayrshire Metal Products plc\0"
+            VALUE "FileDescription", "OD3 Order Detailing\0"
+            VALUE "FileVersion", "2, 5, 19\0"
+            VALUE "InternalName", "OD3\0"
+            VALUE "LegalCopyright", "Copyright (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "OD3.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "OD3 Application\0"
+            VALUE "ProductVersion", "2, 5, 19\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  24, 24
+BEGIN
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      IDM_EXPORT_D3
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_DB_CONNECT
+    BUTTON      ID_DB_DISCONNECT
+    BUTTON      ID_OPEN_SYSCONFIG
+    SEPARATOR
+    BUTTON      ID_PROCESS_ADD_NEWITEM
+    SEPARATOR
+    BUTTON      IDT_STANDARD_TEMP
+    BUTTON      IDT_STANDARD_TEMP_LOAD
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "OD3"
+    IDR_OD3TYPE             "\nOD3\nOD3\nOD3 Files (*.od3)\n.od3\nOD3.Document\nOD3 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "OD3"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEL_ITEM            "Are you sure you want to delete Item %i"
+    IDS_DEL_ONE_ELEMENT     "Delete element?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEL_ELEMENTS        "Delete %i selected elements?"
+    IDS_FILE_MISSING        "Template file %s is missing. Do you want to select a new template file?"
+    IDS_PART1               "2/"
+    IDS_PART2               "EB"
+    IDS_PART3               "C"
+    IDS_PART4               "Z/"
+    IDS_PART5               "1/200"
+    IDS_PART6               "300"
+    IDS_PART7               "240"
+    IDS_PART8               "1/125"
+    IDS_PART9               "1/150"
+    IDS_PART10              "1/175"
+    IDS_PART11              "SB"
+    IDS_PUNCH_SETTING_WARN  "The punchcode %s used in item %i mark %s is not compatible with the standard press setup.\n\nThe output will not be generated.\n\nPlease enter punch codes manually."
+    IDS_PRINTFOOT           "%s (Item %s Page %i) Date: %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROCESS_ADD          "Add new data to project"
+    ID_ADD_NEWITEM          "Add new item to project"
+    ID_DB_CONNECT           "Connect to Database\nConnect"
+    ID_DB_DISCONNECT        "Disconnect from Database\nDisconnect"
+    ID_OPEN_SYSCONFIG       "Configure Project Settings\nProject Settings"
+    ID_PROCESS_VALIDATE     "Validate the current data"
+    ID_PROCESS_GENERATE     "Generate output"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROCESS_ADD_NEWITEM  "Add Itemm to Project\nAdd Item"
+    ID_PROCESS_ADD_NEWBEAM  "Add New Beam \nAdd Beam"
+    ID_PRINT_BEAM           "Preview Beam Report\nBeam Report"
+    ID_PRINT_ACCESSORY      "Preview Accessory Report\nAccessory Report"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_TRANSFER        "\nCopy part files to floppy disks"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_MSG        "Generating"
+    ID_INDICATOR_PROGRESS   "Processing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDT_STANDARD_TEMP       "Select standard template file.\nStandard template."
+    IDT_STANDARD_TEMP_LOAD  "Load standard template file.\nLoad template"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSINGCONFIG       "File named 'products.txt' is missing, your punch code output is going to be incorrect."
+    IDS_PUNCH_ERROR         "The punchcode %s used in item %i mark %s, has different dimension coments.\n\nThe output will not be generated.\n\nPlease enter punch codes manually."
+    IDS_SOFTWARE_VERSION    "2.5.19"
+    IDS_DELASSO             "Remove associations?"
+    IDS_HELPFAIL            "The file %s has not been loaded, this file may be missing.\nTry repairing your current installation."
+    IDS_PUNCH_FAIL          "Item %i, Mark number %s\nUsing punchcode %s (Code) %i\nFeed position %.2f has not been trapped.\n\nCheck this punch output before sending for manufacture.\nIgnore this message at your perill."
+    IDS_MANUAL_CODE_WARNING "The mill output has been changed and user entered hash codes have been detected.\nPlease be aware that these codes may not be compatible with the selected mill.\n\nTo ignore this message press Cancel.\nTo review the elements press OK."
+    IDS_PUNCHCOMMENTWARN    "Punch comments not processed\n\nPunch: %s\nItem number: %i\nMark number: %s\nComment value: %s\n\nThis is normally due to the punch description not being converted into a punch code."
+    IDS_SD_CUSTNAME         "This file comes from"
+    IDS_SD_ORDERNUM         "order number is"
+    IDS_SD_BEAMCOUNT        "entered as follows"
+    IDS_SD_TYPE             "This is a swagedetail file."
+    IDS_SD_BEAM             "Beam"
+    IDS_SD_MARK             "To be marked with"
+    IDS_SD_LEN_PUNCH        "long and is punched"
+    IDS_SD_BEAM_TYPE        "This beam uses"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SD_QUANTITY         "required"
+    IDS_SD_ACC              "Accessories needed are"
+    IDS_SD_TYPE2            "This is an AyrSwage file."
+    IDS_SD_HOLE_ROUND       "Round holes at"
+    IDS_SD_HOLE_SQUARE      "Square holes at"
+    IDS_SD_HOLE_FLANGE      "Flange holes at"
+    IDS_SD_HOLE_ALL4        "All four holes at"
+    IDS_SD_HOLE_TOP         "Top round hole at"
+    IDS_SD_HOLE_BOTTOM      "Bottom round hole at"
+    IDS_SD_HOLE_TOPFLANGE   "Top flange hole at"
+    IDS_SD_HOLE_BOTTOMFLANGE "Bottom flange hole at"
+    IDS_SD_COMMENTS         "The following notes accompany this order"
+    IDS_SD_LEN_NOPUNCH      "and isn't punched"
+    IDS_SD_CUTMARK          "Cutting mark"
+    IDS_SD_PRINTTITLE       "Customer Name: %s  Order Ref: %s"
+    IDS_SD_PRINTWARN        "You have not printed a copy of the accessories, would you like to print them now?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEL_ONE             "Delete selected item?"
+    IDS_DEL_MANY            "Delete %i selected items?"
+    IDS_GENERATED           "Output generated."
+    IDS_MEDIANOTCLEAN       "Floppy disk has not been cleaned, some file could be read only. Please check and retry."
+    IDS_WARNDIRTY           "Floppy disk is not empty, do you want to erase all files before continuing?"
+    IDS_NOT_EXPORTED_IRVINE "Imported Irvine data has not been exported, please export data."
+    IDS_NOT_PRINTED         "Imported data has not been printed, please print imported data."
+    IDS_NOT_EXPORTED_WARLEY "Imported Warley data has not been exported, please export data."
+    IDS_DAVACCESSORIES      "Accessories have been found"
+    IDS_DISKREADONLY        "Can not write to disk, the disk may be set to read only.\nPlease change the disk's read only tab."
+    IDS_DISKMISSING         "There is no floppy disk in the drive. Please put a disk in the drive."
+    IDS_PRODUCTMISS         "**Missing ( %s )**"
+    IDS_BEAMPASTE           "Can not paste beams into an accessory item"
+    IDS_ACCESSORYPASTE      "Can not paste accessories into a beam item"
+    IDS_NOMARK              "Mark number is missing, please enter a mark number"
+    IDS_NOBUNDLE            "Bundle count missing, please enter a bundle count"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOLENGTH            "Accessory length is missing, please enter a valid length"
+    IDS_NOQUANTITY          "Accessory has no quantity, please enter a quantity"
+    IDS_ACCESSORYCHANGED    "Save changes to accessory?"
+    IDS_ACC_MARK_EXIST      "The accessory mark already exists in the item.\nWould you like the system to modify the mark name for you?"
+    IDS_DB_PATHMISSING      "There is not an output path setup for the diagonal brace mill.\nSetup an output path using the system config dialog then regenerate."
+    IDS_VAL_LENGTH          "The length %i is invalid for:\n%s, mark %s\nPlease adjust the length so it is between 100mm and 6000mm."
+    IDS_VAL_QUANTITY        "The quantity %i is invalid for:\n%s, mark %s\nPlease set your quantity greater than zero."
+    IDS_SUMMARYTITLE        "OD3 Rolling Summary"
+    IDS_LINE1_OVERFLOW      "There are too many beams in item %i, reduce the beams to 99 or less"
+    IDS_CEE_PUNCH_MSG       "Unable to automatically punch code %s (Entered as %s)"
+    IDS_PUNCHPOS_MSG        "Dimention %s does not match %s on punch code %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_EXPORT_D3           "Exports current project to a D3 file\nExport to D3"
+    IDS_NOSERVICEFAULT      "Failed to create service holes for ASF section (Item%i - Mark %s)"
+    IDS_MISSINGCOILPATH     "The coil planning database path is missing, please set the path.\nThis is normally L:\\Producti\\OD3\\Coil Planning\\CoilPlanning.mdb."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FILE_CLOSED         BITMAP  DISCARDABLE     "res\\file_clo.bmp"
+IDB_BEAM                BITMAP  DISCARDABLE     "res\\beam.bmp"
+IDB_BEAM_SELECTED       BITMAP  DISCARDABLE     "res\\beam_sel.bmp"
+IDB_ACC                 BITMAP  DISCARDABLE     "res\\AccNoSel.bmp"
+IDB_ACC_SELECTED        BITMAP  DISCARDABLE     "res\\AccSelec.bmp"
+IDB_FILE_OPEN           BITMAP  DISCARDABLE     "res\\FileOpen.bmp"
+IDB_SMALLBEAM           BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\BlueA.bmp"
+IDB_CHILD               BITMAP  DISCARDABLE     "res\\child.bmp"
+IDB_PRINT_SEL           BITMAP  DISCARDABLE     "res\\print_se.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\splash.bmp"
+IDB_MAINTOOL            BITMAP  DISCARDABLE     "res\\mainTool.bmp"
+IDB_QMARK               BITMAP  DISCARDABLE     "res\\Question.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Connect to Database",         ID_DB_CONNECT
+        MENUITEM "Disconnect Database",         ID_DB_DISCONNECT
+        MENUITEM SEPARATOR
+        POPUP "Import"
+        BEGIN
+            MENUITEM "Deta&il 3 File\tCtrl+I",      ID_FILE_IMPORT_D3
+            MENUITEM "ASW File",                    IDM_IMPORT_ASW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Configure"
+    BEGIN
+        MENUITEM "&Connect Database",           ID_DB_CONNECT
+        MENUITEM "&Disconnect Database",        ID_DB_DISCONNECT
+        MENUITEM "&Project Settings",           ID_OPEN_SYSCONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Set Template File",           IDT_STANDARD_TEMP
+        MENUITEM "Load template file\tCtrl+L",  IDT_STANDARD_TEMP_LOAD
+    END
+    POPUP "&Process"
+    BEGIN
+        POPUP "&Add ..."
+        BEGIN
+            MENUITEM "New Item\tA",                 ID_PROCESS_ADD_NEWITEM
+        END
+        POPUP "&Validate"
+        BEGIN
+            MENUITEM "&All",                        ID_PROCESS_VALIDATE_ALL
+            MENUITEM "&Item",                       ID_PROCESS_VALIDATE_ITEM
+        END
+        POPUP "&Generate"
+        BEGIN
+            MENUITEM "&All",                        ID_PROCESS_GENERATE_ALL
+            MENUITEM "&Item",                       ID_PROCESS_GENERATE_ITEM
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OD3",                  ID_APP_ABOUT
+        MENUITEM "Help Topics",                 ID_HELP_FINDER
+    END
+END
+
+IDR_OD3TYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Connect to Database",         ID_DB_CONNECT
+        MENUITEM "Disconnect Database",         ID_DB_DISCONNECT
+        MENUITEM SEPARATOR
+        POPUP "&Import..."
+        BEGIN
+            MENUITEM "Deta&il 3 File\tCtrl+I",      ID_FILE_IMPORT_D3
+            MENUITEM "ASW File",                    IDM_IMPORT_ASW
+        END
+        POPUP "Export"
+        BEGIN
+            MENUITEM "Detail 3 File",               IDM_EXPORT_D3
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Transfer",                    ID_FILE_TRANSFER
+        MENUITEM "Transfer (USB)",              ID_FILE_TRANSFER2
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Print Summary",               IDM_PRINT_SUMMARY
+        MENUITEM "Print Job Sheets",            IDM_PRINT_JOBSHEETS
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT
+        MENUITEM SEPARATOR
+        MENUITEM "Lar&ge Icons",                ID_VIEW_LARGEICON
+        MENUITEM "S&mall Icons",                ID_VIEW_SMALLICON
+        MENUITEM "&List",                       ID_VIEW_LIST
+        MENUITEM "&Details",                    ID_VIEW_DETAILS
+        MENUITEM SEPARATOR
+        POPUP "Arrange &Icons"
+        BEGIN
+            MENUITEM "By &Name",                    ID_VIEW_BYNAME
+            MENUITEM SEPARATOR
+            MENUITEM "&Auto Arrange",               ID_VIEW_AUTOARRANGE
+        END
+        MENUITEM "Lin&e up Icons",              ID_VIEW_LINEUP
+    END
+    POPUP "&Configure"
+    BEGIN
+        MENUITEM "&Connect Database",           ID_DB_CONNECT
+        MENUITEM "&Disconnect Database",        ID_DB_DISCONNECT
+        MENUITEM "&Project Settings",           ID_OPEN_SYSCONFIG
+        MENUITEM SEPARATOR
+        MENUITEM "Set Template",                IDT_STANDARD_TEMP
+        MENUITEM "Load template file\tCtrl+L",  IDT_STANDARD_TEMP_LOAD
+    END
+    POPUP "&Process"
+    BEGIN
+        POPUP "&Add ..."
+        BEGIN
+            MENUITEM "New Item\tA",                 ID_PROCESS_ADD_NEWITEM
+        END
+        POPUP "&Validate ..."
+        BEGIN
+            MENUITEM "&All",                        ID_PROCESS_VALIDATE_ALL
+            MENUITEM "&Item",                       ID_PROCESS_VALIDATE_ITEM
+            MENUITEM "Selection",                   IDM_VAL_SELECTION
+        END
+        POPUP "&Generate ..."
+        BEGIN
+            MENUITEM "All Items\tG",                ID_PROCESS_GENERATE_ALL
+            MENUITEM "&Item",                       ID_PROCESS_GENERATE_ITEM
+            MENUITEM "Selection",                   IDM_GEN_SELECTION
+        END
+        POPUP "&Print ..."
+        BEGIN
+            MENUITEM "&All",                        ID_PROCESS_PRINT_ALL
+            MENUITEM "&Item",                       ID_PROCESS_PRINT_ITEM
+            MENUITEM "Selection",                   IDM_REP_SELECTION
+        END
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "Coil Planning"
+    BEGIN
+        MENUITEM "Send Current Job To Planner", IDM_COIL_SENDJOB
+        MENUITEM "Update Order To Completed",   IDM_COIL_UPDATEJOB
+        MENUITEM SEPARATOR
+        MENUITEM "Report Coil Requirements",    IDM_COIL_PRINTLIVE
+        MENUITEM "Export Coil Requirements",    IDM_COIL_EXPORTLIVE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About OD3...",               ID_APP_ABOUT
+        MENUITEM "Help Topics",                 ID_HELP_FINDER
+    END
+END
+
+IDR_LEFTPOPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "_DUMP_"
+    BEGIN
+        MENUITEM "&Delete Item\tDel",           ID_ITEM_DELETE
+        MENUITEM "Add &Beam Elements",          ID_ITEM_ADD_BEAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Associate item",             ID_OPEN_SYSCONFIG
+        POPUP "&Validate"
+        BEGIN
+            MENUITEM "&All items",                  ID_PROCESS_VALIDATE_ALL
+            MENUITEM "&This item only",             ID_ITEM_VALIDATE
+            MENUITEM "Selected",                    IDM_VAL_SELECTION
+        END
+        POPUP "&Generate"
+        BEGIN
+            MENUITEM "All Items\tG",                ID_PROCESS_GENERATE_ALL
+            MENUITEM "&This item only",             ID_ITEM_GENERATE
+            MENUITEM "Selected",                    IDM_GEN_SELECTION
+        END
+        POPUP "Set Report Type"
+        BEGIN
+            MENUITEM "All Items",                   ID_DUMP_SETREPORTTYPE_ALLITEMS
+
+            MENUITEM "This Item only",              ID_ITEM_PRINT
+            MENUITEM "Selected",                    IDM_REP_SELECTION
+        END
+        POPUP "Set Transfer type"
+        BEGIN
+            MENUITEM "All Items\t",                 ID_FILE_TRANSFER
+            MENUITEM "This &Item only",             ID_ITEM_TRANSFER
+            MENUITEM "All Items\t(USB)",            ID_FILE_TRANSFER2
+            MENUITEM "This &Item only (USB)",       ID_ITEM_TRANSFER2
+            MENUITEM "Selected",                    IDM_TRAN_SELECTION
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Advanced",                    IDM_ADVANCED_MODE
+    END
+END
+
+IDR_POPUPMENUS MENU DISCARDABLE 
+BEGIN
+    POPUP "_DUMP_"
+    BEGIN
+        MENUITEM "&Edit Element",               ID_ELEMENT_EDIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Cut",                        ID_ELEMENT_CUT
+        MENUITEM "&Copy",                       ID_ELEMENT_COPY
+        MENUITEM "&Paste",                      ID_ELEMENT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete\tDel",                ID_ELEMENT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         IDM_SELECTALLITEMS
+        MENUITEM SEPARATOR
+        MENUITEM "Select element for printing", IDM_PRINTTHISELEMENT
+    END
+END
+
+IDR_SYSASS_POP MENU DISCARDABLE 
+BEGIN
+    POPUP "_SYSPOPUP_"
+    BEGIN
+        MENUITEM "Select All\tCtrl+A",          IDM_SYS_SELALL
+        MENUITEM "Delete\tDel",                 IDM_SYS_DEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 213, 207
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Office Detailing System - OD3 ",IDC_STATIC,25,140,120,8,
+                    SS_NOPREFIX,WS_EX_TRANSPARENT
+    LTEXT           "Copyright (C) January 2007",IDC_STATIC,25,195,119,8,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "OK",IDOK,170,175,30,19,WS_GROUP
+    LTEXT           "",IDC_STATIC_VERSION,25,156,120,9,0,WS_EX_TRANSPARENT
+    LTEXT           "",IDC_BUILD,25,170,120,10,0,WS_EX_TRANSPARENT
+    CONTROL         "Animate1",IDC_ANIMATEOD3_A,"SysAnimate32",ACS_CENTER | 
+                    ACS_AUTOPLAY | WS_BORDER | WS_TABSTOP,0,116,213,16
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP,0,0,213,135
+END
+
+IDD_NEW_PROJECT DIALOG DISCARDABLE  0, 0, 297, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New OD3 Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Build single order:",IDC_RADIO_PROJTYPE1,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | WS_TABSTOP,19,
+                    23,77,18
+    CONTROL         "Build &multiple orders",IDC_RADIO_PROJTYPE2,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,111,23,77,18
+    CONTROL         "&Integrated Processing",IDC_RADIO_PROJTYPE3,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,201,23,77,18
+    LTEXT           "&Project Name:",IDC_STATIC,19,60,46,8
+    EDITTEXT        IDC_EDIT_PROJNAME,90,60,56,14,ES_AUTOHSCROLL
+    LTEXT           "( Enter AMP Job Number)",IDC_STATIC,155,60,81,8
+    LTEXT           "Customer &Name:",IDC_STATIC,19,80,53,8
+    EDITTEXT        IDC_EDIT_CUSTOMER_NAME,90,77,199,14,ES_AUTOHSCROLL
+    LTEXT           "Customer Order &Ref:",IDC_STATIC,19,98,65,8
+    EDITTEXT        IDC_EDIT_CUSTOMER_REF,90,95,199,14,ES_AUTOHSCROLL
+    LTEXT           "&Destination:",IDC_STATIC,19,115,38,8
+    EDITTEXT        IDC_EDIT_JOB_DESTINATION,90,113,199,14,ES_AUTOHSCROLL
+    LTEXT           "Due Da&te:",IDC_STATIC,20,177,34,8
+    EDITTEXT        IDC_EDIT_DUEDATE,90,173,51,14,ES_AUTOHSCROLL
+    GROUPBOX        "Project Type: (Choose one)",IDC_STATIC,7,7,283,43
+    DEFPUSHBUTTON   "OK",IDOK,235,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,185,50,14
+    LTEXT           "Comments:",IDC_STATIC,19,138,36,8
+    EDITTEXT        IDC_EDIT_COMMENTS,90,133,199,35,ES_AUTOHSCROLL
+END
+
+IDD_PROJECT_OPTIONS_DIALOG DIALOG DISCARDABLE  0, 0, 247, 36
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Project Configuration Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Load Default Settings",ID_FILE_IMPORT_PROJECTSETTINGS,
+                    85,10,75,15,BS_CENTER | BS_VCENTER | BS_MULTILINE | 
+                    WS_DISABLED
+    PUSHBUTTON      "&Configure Settings",IDC_PROJECT_SETUP_BUTTON,10,10,72,
+                    15
+    PUSHBUTTON      "&Accept Settings",IDCANCEL,165,10,75,15,WS_DISABLED
+END
+
+IDD_ASSOCIATIONS_PAGE DIALOG DISCARDABLE  0, 0, 306, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "&Association Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Production &Line",IDC_STATIC,7,7,50,8
+    COMBOBOX        IDC_COMBO_PRODLINE,7,19,77,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Select by Product &Group",IDC_RADIO_PRODUCTGROUP,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,13,52,93,10
+    CONTROL         "Select by Section &Type",IDC_RADIO_SECTION_TYPE,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,13,68,89,10
+    CONTROL         "Select by &Product",IDC_RADIO_PRODUCT,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED,13,84,72,10
+    COMBOBOX        IDC_COMBO_PRODUCTS,7,121,104,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Associate",IDC_ASSOCIATE_BUTTON,7,141,53,20
+    PUSHBUTTON      "Remove",IDC_REMOVE_BUTTON,81,141,53,20
+    CONTROL         "List1",IDC_ASSOCIATION_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,153,7,146,154
+    LTEXT           "Associate Production Line with...",IDC_STATIC,7,110,104,
+                    8
+    GROUPBOX        "Associate By...",IDC_STATIC,7,40,104,61
+END
+
+IDD_MANUALINPUT_PAGE DIALOG DISCARDABLE  0, 0, 306, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Manual Input"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PROCESSING_PAGE DIALOG DISCARDABLE  0, 0, 306, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Processing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Process &All Files in Project",IDC_RADIO_PROCESS_ALL,
+                    "Button",BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | 
+                    WS_TABSTOP,24,34,98,10
+    CONTROL         "&Select Files to Process",IDC_RADIO_SELECT_FILES,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED | WS_TABSTOP,
+                    24,53,87,10
+    CONTROL         "Automatically &Process using Defaults",
+                    IDC_RADIO_PROCESS_AUTO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,24,98,131,10
+    CONTROL         "Prompt for &Options",IDC_RADIO_OPTIONS_PROMPT,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_DISABLED | WS_TABSTOP,
+                    24,119,74,10
+    GROUPBOX        "",IDC_STATIC,16,85,176,51,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,16,22,176,48,WS_GROUP
+    LTEXT           "Validations / Generations Options",IDC_STATIC,16,7,106,
+                    8
+END
+
+IDD_MANUAL_BEAM_INPUT DIALOG DISCARDABLE  0, 0, 506, 298
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Manual Beam Input"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,492,260
+    LTEXT           "",IDC_ITEM_LABEL,15,7,283,8
+    LTEXT           "&Section Size:",IDC_STATIC,27,33,48,11
+    COMBOBOX        IDC_COMBO_PROFILE,79,30,81,92,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mark No.",IDC_STATIC,27,49,30,8
+    EDITTEXT        IDC_EDIT_MARK,79,46,40,12,ES_AUTOHSCROLL
+    LTEXT           "Quantity:",IDC_STATIC,27,62,29,8
+    EDITTEXT        IDC_EDIT_QTY,79,62,40,12,ES_AUTOHSCROLL
+    LTEXT           "O/all Length:",IDC_STATIC,27,78,42,8
+    EDITTEXT        IDC_EDIT_LENGTH,79,78,40,12,ES_AUTOHSCROLL
+    LTEXT           "Bundle Count:",IDC_STATIC,27,94,46,8
+    EDITTEXT        IDC_EDIT_BDL_COUNT,79,94,40,12,ES_AUTOHSCROLL
+    LTEXT           "EB Slope:",IDC_STATIC,27,111,32,8,WS_DISABLED
+    EDITTEXT        IDC_EB_SLOPE,79,108,40,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Part Code Data",IDC_STATIC,165,18,190,105
+    LTEXT           "SPC Code:",IDC_STATIC,223,33,36,8
+    COMBOBOX        IDC_COMBO_SPC,271,30,52,73,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,213,46,113,20
+    CONTROL         "Type &1 -",IDC_RADIO_MTYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | BS_FLAT | WS_GROUP | WS_TABSTOP,223,54,42,
+                    10
+    CONTROL         ":   Type &2 - ",IDC_RADIO_MTYPE2,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFTTEXT | BS_FLAT,270,53,52,10
+    LTEXT           "Span 1:",IDC_STATIC,173,76,26,8
+    EDITTEXT        IDC_EDIT_SPAN1,211,73,40,12,ES_AUTOHSCROLL
+    LTEXT           "Ohang1:",IDC_STATIC,264,76,28,8
+    EDITTEXT        IDC_EDIT_OHANG1,301,73,40,12,ES_AUTOHSCROLL
+    LTEXT           "Span 2:",IDC_STATIC,173,92,26,8
+    EDITTEXT        IDC_EDIT_SPAN2,211,89,40,12,ES_AUTOHSCROLL
+    LTEXT           "Ohang2:",IDC_STATIC,264,92,28,8
+    EDITTEXT        IDC_EDIT_OHANG2,301,89,40,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Span 3:",IDC_STATIC,173,108,26,8
+    EDITTEXT        IDC_EDIT_SPAN3,211,105,40,12,ES_AUTOHSCROLL
+    GROUPBOX        "Additional or Non-Standard Holes",IDC_STATIC,15,128,345,
+                    107
+    CONTROL         "Custom1",IDC_EXTRA_HOLE_GRID,"COD3GridCtrl",WS_TABSTOP,
+                    20,143,335,90
+    DEFPUSHBUTTON   "&Save Record",IDC_SAVE_BUTTON,120,240,65,14
+    PUSHBUTTON      "<<",IDC_PREVIOUS__BUTTON,20,240,25,14
+    PUSHBUTTON      ">>",IDC_NEXT_BUTTON,330,240,25,14
+    PUSHBUTTON      "&Close",IDCANCEL,155,275,65,14
+    PUSHBUTTON      "New Item",IDC_ADDITEM_BUTTON,285,275,65,14
+    PUSHBUTTON      "New Element",IDC_ADD_EXTRA_BEAM,30,275,65,14
+    LTEXT           "",IDC_BEAM_REF,298,7,66,8
+    PUSHBUTTON      "&Delete Record",IDC_DELETE_BEAM,190,240,65,14
+    CONTROL         "Service holes",IDC_ASFSERVICE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,262,
+                    107,65,10
+END
+
+IDD_ACC_DIALOG DIALOG DISCARDABLE  0, 0, 157, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Accessories"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ACC_NAME,5,20,145,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ACC_QTY,5,50,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ACC_MARK,85,50,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ACC_LEN,5,79,55,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ACC_BUNDLE,85,80,65,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ACC_COMMENT,5,110,145,36,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_VSCROLL
+    PUSHBUTTON      "<<",IDC_ACC_PREV,13,169,20,15
+    PUSHBUTTON      ">>",IDC_ACC_NEXT,33,169,20,15
+    DEFPUSHBUTTON   "Close",IDOK,111,180,35,14
+    LTEXT           "Accessory product name",IDC_STATIC,5,10,90,10
+    LTEXT           "Quantity",IDC_STATIC,5,39,55,10
+    LTEXT           "Length (mm)",IDC_STATIC,5,69,55,10
+    LTEXT           "Mark number",IDC_STATIC,85,40,65,10
+    LTEXT           "Bundle count",IDC_STATIC,85,70,65,10
+    LTEXT           "Comments",IDC_STATIC,5,100,90,10
+    PUSHBUTTON      "Save",IDC_ACC_SAVE,64,162,23,15
+    GROUPBOX        "Accessory",IDC_STATIC,8,149,85,50
+    PUSHBUTTON      "New",IDC_ACC_NEW,64,177,23,15
+END
+
+IDD_SELECT_ITEMS_DIALOG DIALOG DISCARDABLE  0, 0, 191, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Item to Process:-"
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Item No:",ID_STATIC,7,7,177,81
+    EDITTEXT        IDC_EDIT_ITEM_NO,61,17,49,20,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_ITEM_NO_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,110,17,18,20
+    PUSHBUTTON      "Cancel",IDCANCEL,74,55,42,21
+    PUSHBUTTON      "  &Accessory          Item",IDC_SELECT_ACC_BUTTON,22,55,
+                    42,21,BS_CENTER | BS_VCENTER | BS_MULTILINE | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "&Beam Item",IDC_SELECT_BEAM_BUTTON,126,55,42,21,
+                    BS_CENTER | BS_VCENTER | BS_MULTILINE
+END
+
+IDD_INPUTFILES_PAGE DIALOG DISCARDABLE  0, 0, 306, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Input Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Retrieve Input Data from Files in the following directories:",
+                    IDC_STATIC,7,7,179,8
+    LTEXT           "Project Directory \ncontaining (*.OD3) Files",
+                    IDC_STATIC,21,44,80,19
+    LTEXT           "Auto - Import Directory\ncontaining (*.D3) Files",
+                    IDC_STATIC,21,113,76,19
+    EDITTEXT        IDC_PROJECTDIR,106,46,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AUTOINPUT,106,117,154,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "--->",IDC_AUTOPATH_BUTTON,269,117,15,12
+    PUSHBUTTON      "--->",IDC_PROJPATH_BUTTON,269,46,15,12
+    GROUPBOX        " Auto - Import Directory ",IDC_STATIC,13,95,280,53
+    GROUPBOX        " Project Directory ",IDC_STATIC,13,22,280,53
+END
+
+IDD_OUTPUTFILES_PAGE DIALOG DISCARDABLE  0, 0, 306, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Output Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Production Line",IDC_STATIC,15,28,50,8
+    LTEXT           "Directory Name:",IDC_STATIC,15,51,52,8
+    COMBOBOX        IDC__COMBO_OUTPUT_LINE,80,27,90,58,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_OUPUT_ADD_BUTTON,203,23,36,16
+    PUSHBUTTON      "&Remove",IDC_OUTPUT_REMOVE_BUTTON,254,23,36,16
+    CONTROL         "List1",IDC_OUTPUT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,15,70,276,84
+    EDITTEXT        IDC_EDIT_OUTPUT_PATH,80,49,187,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "--->",IDC_SELECT_OUTPATH_BUTTON,276,49,15,12
+    GROUPBOX        " Output Files to Selected Directories... ",IDC_STATIC,7,
+                    7,292,155
+END
+
+IDD_REPORTS_PAGE DIALOG DISCARDABLE  0, 0, 306, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Reports"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Reports will be Stored in the Following Directories",
+                    IDC_STATIC,7,7,156,8
+    LTEXT           "Select Report Directory:",IDC_STATIC,13,54,88,8
+    LTEXT           "Select Report Path:",IDC_STATIC,13,148,90,8
+    EDITTEXT        IDC_EDIT_AUTOLINES,110,52,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NONAUTOLINES,110,146,154,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_REPORT_PRODLINE,110,32,83,59,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Production Line:",IDC_STATIC,13,33,54,8
+    CONTROL         "List1",IDC_REPORT_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,13,71,280,52
+    PUSHBUTTON      "--->",IDC_REPORTS_NONAUTO_BUTTON,278,146,15,12
+    PUSHBUTTON      "--->",IDC_REPORTS_AUTO_BUTTON,278,52,15,12
+    GROUPBOX        " Automatic Production Lines ",IDC_STATIC,7,21,292,110
+    GROUPBOX        " Non - Automatic Production Lines ",IDC_STATIC,7,135,
+                    292,28
+    PUSHBUTTON      "&Add",IDC_REPORTS_ADD_BUTTON,208,32,33,14
+    PUSHBUTTON      "&Remove",IDC_REPORTS_REMOVE_BUTTON,259,32,33,14
+END
+
+IDD_ITEMS_LIST_DIALOG DIALOG DISCARDABLE  0, 0, 397, 281
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Project Item List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Product Code :",IDC_STATIC,20,50,60,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_PRODUCTCODES,20,60,64,108,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_ITEMS_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,100,375,65
+    PUSHBUTTON      "Close",IDCANCEL,331,261,50,14
+    DEFPUSHBUTTON   "Add Item",IDC_APPLY_ITEM_NO,259,261,50,14
+    CONTROL         "John Reid Special Products",IDC_JR_PRODUCTS,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,100,20,103,10
+    CONTROL         "SBE Special Products",IDC_SBE_PRODUCTS,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,210,20,85,10
+    CONTROL         "Standard Products",IDC_STANDARD_PRODUCTS,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,15,20,75,10
+    GROUPBOX        " Select Your Product Type... ",IDC_STATIC,5,5,295,28
+    GROUPBOX        "Add products to your Item List... ",IDC_STATIC,5,35,350,
+                    50
+    CTEXT           "Product Name :",IDC_STATIC,215,50,120,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_PRODUCTNAMES,215,60,125,70,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Profile :",IDC_STATIC,95,50,110,8,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_PROFILE,95,60,111,108,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Beams",IDC_STATIC,5,90,385,80
+    GROUPBOX        "Accessories",IDC_STATIC,5,175,385,80
+    CONTROL         "List2",IDC_ACC_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,10,185,375,65
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 220, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cost Summary Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Preview",IDOK,163,7,50,14
+    PUSHBUTTON      "Close",IDCANCEL,163,104,50,14
+    PUSHBUTTON      "Print",IDC_BUTTON1,163,28,50,14
+    EDITTEXT        IDC_EDIT1,109,25,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,109,43,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,109,63,22,14,ES_AUTOHSCROLL
+    LTEXT           "Daventry Rolled Sections and Accessories",IDC_STATIC,14,
+                    25,80,16
+    LTEXT           "CW Sections, Inset and Oversail Cleats",IDC_STATIC,15,
+                    47,91,15
+    LTEXT           "Associated Sections",IDC_STATIC,15,68,65,8
+    GROUPBOX        "Enter Discount Level",IDC_STATIC,7,7,131,111
+    PUSHBUTTON      "Reset Deaults",IDC_BUTTON2,15,96,52,17
+    PUSHBUTTON      "Apply",IDC_BUTTON3,79,96,52,17
+END
+
+IDD_CEE_SECTION DIALOGEX 0, 0, 237, 238
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cee sections failures."
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,165,220,50,14
+    CONTROL         "List1",IDC_FAILLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,8,17,215,90,WS_EX_CLIENTEDGE
+    CONTROL         "Delete item after selected",IDC_DEL_ITEM,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_RIGHT | BS_FLAT | 
+                    WS_TABSTOP,15,113,205,10
+    GROUPBOX        "Double click sections to ammend, click to view punch fault",
+                    IDC_STATIC,3,5,227,125
+    EDITTEXT        IDC_LIST_FAULTS,10,150,215,55,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "Punch Fault description",IDC_STATIC,4,135,226,80
+END
+
+IDD_LISTACC DIALOGEX 0, 0, 167, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Accessory list"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,130,128,30,15
+    CONTROL         "List1",IDC_ACC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,10,20,145,80
+    PUSHBUTTON      "Print",IDC_PRINT_ACC,115,105,30,15
+    GROUPBOX        "Accessory List",IDC_STATIC,5,5,155,120
+END
+
+IDD_SPLITD3 DIALOG DISCARDABLE  0, 0, 152, 237
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Multiple site products found"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,110,218,30,14,BS_FLAT
+    CONTROL         "Warley",IDC_WARLEY_RAD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,10,20,55,10
+    CONTROL         "Irvine",IDC_IRVINE_RAD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,85,20,55,10
+    GROUPBOX        "",IDC_STATIC,5,5,140,75
+    GROUPBOX        "Quick view",IDC_STATIC,5,85,140,130
+    PUSHBUTTON      "Export",IDC_EXPORTWARLEY,20,34,30,15,BS_FLAT | 
+                    WS_DISABLED
+    PUSHBUTTON      "Export",IDC_EXPORTIRVINE,95,34,30,15,BS_FLAT | 
+                    WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,71,10,1,47
+    PUSHBUTTON      "Print All",IDC_PRINTEXPORTS,51,60,40,15,BS_FLAT
+    CONTROL         "Tree1",IDC_EXPORTPRODUCTS_TREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_DISABLEDRAGDROP | TVS_TRACKSELECT | WS_BORDER | 
+                    WS_TABSTOP,10,95,130,115
+    GROUPBOX        "",IDC_STATIC,35,51,75,29
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 213, 135
+STYLE DS_SYSMODAL | WS_POPUP
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Animate1",IDC_ANIMATEOD3,"SysAnimate32",ACS_CENTER | 
+                    ACS_AUTOPLAY | WS_BORDER | WS_TABSTOP,0,114,213,17
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP,0,0,213,135
+END
+
+IDD_WHATSNEW DIALOG DISCARDABLE  0, 0, 303, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Whats new in OD3"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,240,165,35,14
+    EDITTEXT        IDC_DISPLAYTEXT,0,0,303,155,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_OEMCONVERT | ES_WANTRETURN | 
+                    WS_VSCROLL
+    CONTROL         "Don't show me again",IDC_DONTSHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,165,105,10
+END
+
+IDD_WERNIK DIALOGEX 0, 0, 110, 85
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+FONT 14, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CTEXT           "Is the SwageBeam Wernick ?",IDC_STATIC,0,5,110,10,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "Yes",IDC_ISWERNIK,25,65,25,15
+    PUSHBUTTON      "No",IDC_NOTWERNIK,58,65,25,15
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,35,20,40,37,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+END
+
+IDD_MESSAGE DIALOG DISCARDABLE  0, 0, 201, 66
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_UPDATECOILSTATUS DIALOG DISCARDABLE  0, 0, 277, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Update Job Status"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COIL_JOBNUM,5,20,76,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_COIL_JOBSERACH,85,20,30,15
+    PUSHBUTTON      "Cancel",IDCANCEL,150,194,50,14
+    DEFPUSHBUTTON   "OK",IDOK,205,194,50,14
+    CONTROL         "List1",IDC_COIL_JOBLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,70,245,105
+    GROUPBOX        "Section Details",IDC_STATIC,5,41,265,144
+    LTEXT           "Search Job Number",IDC_STATIC,5,10,75,10
+    LTEXT           "order",IDC_COIL_ORDERNUM,20,55,136,10,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_NEW_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_ASSOCIATIONS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MANUALINPUT_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_PROCESSING_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_MANUAL_BEAM_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 499
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_SELECT_ITEMS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+        HORZGUIDE, 47
+    END
+
+    IDD_INPUTFILES_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_OUTPUTFILES_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_REPORTS_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_ITEMS_LIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_LISTACC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+    END
+
+    IDD_UPDATECOILSTATUS, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OD3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""grid.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MANUAL_BEAM_INPUT DLGINIT
+BEGIN
+    IDC_COMBO_PROFILE, 0x403, 8, 0
+0x2f31, 0x3531, 0x3130, 0x0033, 
+    IDC_COMBO_PROFILE, 0x403, 8, 0
+0x2f31, 0x3531, 0x3130, 0x0035, 
+    IDC_COMBO_PROFILE, 0x403, 8, 0
+0x2f31, 0x3531, 0x3130, 0x0037, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3130, 0x0050, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3130, 0x0053, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3130, 0x0052, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3230, 0x0050, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3230, 0x0053, 
+    IDC_COMBO_SPC, 0x403, 4, 0
+0x3230, 0x0052, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DELETEITEM           "Remove Item from project"
+    ID_DELETE_ELEMENT       "Delete selected element"
+    ID_PROCESS_PRINT_ALL    "Print beam report for all items in project"
+    ID_PROCESS_PRINT_THIS   "Print beam report for this item only"
+    ID_EDIT_ELEMENT         "Open dialog to edit element"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROCESS_DELETE_ITEM  "Remove item from project"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PRINT_SUMMARY       "Summary\nPrint summary report for OD3 items"
+    IDM_PRINT_JOBSHEETS     "Job Sheets\nPrint job sheets for OD3 items"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OD3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxdb.rc"          // Database resources
+#endif
+
+#include "grid.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
